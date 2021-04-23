@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: powderblue;
+}
+
+
+#container{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template: repeat(4,20px) / repeat(5,20px);
+    // gap: 5px;
+    .casillero{
+        // background-color: yellowgreen;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        &:nth-child(odd){
+            background-color: greenyellow;
+            color: blueviolet;
+        }
+        &:nth-child(even){
+            background-color: green;
+            color: whitesmoke;
+        }
+
+        &.headSnake{
+            background-color: goldenrod;
+        }
+
+        &.bodySnake{
+            background-color: grey;
+        }
+
+        &.food{
+            background-color: red;
+        }
+    }
+
+
+}
+
